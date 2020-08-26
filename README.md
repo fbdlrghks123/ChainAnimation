@@ -22,8 +22,6 @@ UIView.animate(withDuration: 0.15, delay: 0.0, options: .curveEaseIn, animations
 
 ### After
 ```swift
-import ChainableAnimations
-
 UIView.prepareAnimation(withDuration: 0.15, options: .curveEaseIn) {
     self.titleImageView.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
 }.then(withDuration: 0.4, options: .curveEaseOut) {
