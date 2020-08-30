@@ -19,7 +19,9 @@ class ViewController: UIViewController {
             self.testLabel.alpha = 0
         }.then(withDuration: 0.3) {
             self.testLabel.alpha = 1
-        }.animate()
+        }.animate { _ in
+            print("completed")
+        }
     }
 }
 
